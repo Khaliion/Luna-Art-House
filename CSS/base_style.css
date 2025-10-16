@@ -1,49 +1,18 @@
 :root {
-    --color-bg: #efefef;
-    --text-color: #282828;
-    --first_title: #000000;
-    --second_title: black;
-    --third_title: black;
-    --border-images-color: #300d30;
-    --title-artist-color: #6b6872;
-    --artist-div-bg-color: #d1d1d3;
-    --header-bg-color: #424142;
+    --color-title: #707070;
+    --color-text: #000000;
 }
 
 body{
-    font-family: 'Times New Roman', Times, serif;
+    background-color: #FFDDDD;
+    margin:0;
 }
+
 
 .header{
-    display: flex;
-    align-items: flex-end;
-    border: 2px solid green;
+background-color: white;
+min-height: 10vh;
 }
-
-.header_section{
-    display: flex;
-    align-items: flex-end;
-    border: 2px solid black;
-    width: 15%;
-}
-
-.header_img{
-    border: 2px solid pink;
-    width: 90px;
-    padding-left: 3%;
-}
-
-.header_p{
-    border: 2px solid purple;
-    margin: 0;
-    margin-top: auto;
-    padding-left: 3%;
-}
-
-.navbar {
-    border: 2px solid red;
-}
-
 
 .nav-toggle {
     position: absolute;
@@ -62,7 +31,7 @@ body{
 .nav-toggle-label {
     display: none;
     cursor: pointer;
-    position: fixed; 
+    position: absolute; 
     top: 20px;
     right: 20px;
     z-index: 1000;
@@ -73,7 +42,7 @@ body{
     display: block;
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     margin-bottom: 5px;
     transition: all 0.3s ease-in-out;
 }
@@ -90,30 +59,118 @@ nav ul li {
 }
 
 nav ul li a {
-    color: black;
-    padding: 10px 50px;
+    color: #FFDDDD;
+    padding: 10px 15px;
     text-decoration: none;
     display: block;
 }
 
-nav ul li a:hover {
-    color: #5a5252;
+.nav-toggle-label {
+    display: block;
 }
 
-main{
-    border: 2px solid grey;
+nav ul {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #000000f2;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100%);
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 998;
+        margin: 0;
+        padding: 50px 0;
 }
 
-.main_div{
-    border: 2px solid cyan;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    .nav-toggle:checked ~ ul {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
 }
 
-section{
-    border: 2px yellow solid;
+
+    /* Animation du hamburger */
+    .nav-toggle:checked + .nav-toggle-label span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
 }
 
-aside img {
-    max-height: 500px;
+    .nav-toggle:checked + .nav-toggle-label span:nth-child(2) {
+        opacity: 0;
+}
+
+    .nav-toggle:checked + .nav-toggle-label span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+}
+
+    nav ul li {
+        margin: 20px 0;
+        opacity: 0;
+        transform: translateX(100px);
+        transition: all 0.3s ease-in-out;
+}
+
+    .nav-toggle:checked ~ ul li {
+        opacity: 1;
+        transform: translateX(0);
+}
+
+    /* Délai d'animation pour chaque élément du menu */
+    nav ul li:nth-child(1) { transition-delay: 0.1s; }
+    nav ul li:nth-child(2) { transition-delay: 0.2s; }
+    nav ul li:nth-child(3) { transition-delay: 0.3s; }
+    nav ul li:nth-child(4) { transition-delay: 0.4s; }
+
+.btn-toggle {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #707070;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+.hidden{
+    display:none
+}
+
+section {
+margin: 1em;
+
+}
+
+
+/*Partie oeuvres*/
+
+.grid-template-images .extra_oeuvre{
+    display:none
+}
+
+/*Partie Artiste*/
+
+.extra_artiste{
+    display:none
+}
+
+.desktop_only{
+    display: none;
+}
+
+/*Partie Texte partout*/
+
+.main_text{
+    font-size: 15px;
+    color: var(--color-text);
+}
+
+.main_title{
+font-size: 25px;
+color: var(--color-title);
+margin: 0;
 }

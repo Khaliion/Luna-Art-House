@@ -1,191 +1,196 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset='utf-8'>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Stylesheet CSS -->
+    <link rel="stylesheet" href="CSS/base_style.css">
+    
+    <!-- Script JS -->
+    <script src="JavaScript/Script.js" defer></script>
+    
+    <title>Luna ART House | Galerie d'art et œuvres numériques</title>
+    <link rel="icon" type="image/x-icon" href="" alt="navbar_icone">
+</head>
 
-        <!--Stylesheet CSS de base + Responsive + Animations-->
-        <link rel="stylesheet" href="CSS/base_style.css">
-        <link rel="stylesheet" href="">
-        <link rel="stylesheet" href="">
+<body>
 
-        <!--Script JS-->
-        <script src="JavaScript/Script.js"></script>
-        
-        <title>Luna ART House | Galerie d'art et oeuvres numériques</title>
-        <!--FavIcon--> 
-        <link rel="icon" type="image/x-icon" href="">
+    <header class="header">
+        <div class="header_section">
+            <img src="" alt="logo" class="header_img">
+        </div>
 
-    </head>
+        <nav class="navbar fade-in-right" aria-label="Navigation principale">
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span><span></span><span></span>
+            </label>
+            <ul>
+                <li><a href="galery.html">La galerie</a></li>
+                <li><a href="">Nos œuvres</a></li>
+                <li><a href="">Nos artistes</a></li>
+                <li><a href="">Nous contacter</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <body>
-        <!--Header template-->
-        <header class="header">
 
-            <section class="header_section">
-                <img src="Images/test.jpg" alt="" class="header_img">
-                <p class="header_p">Luna Art<br>House</p>
-            </section>
-            <nav class="navbar fade-in-right">
-                <input type="checkbox" id="nav-toggle" class="nav-toggle">
-                <label for="nav-toggle" class="nav-toggle-label">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-                <ul>
-                    <li><a href="galery.html">La galerie</a></li>
-                    <li><a href="oeuvres.html">Nos oeuvres</a></li>
-                    <li><a href="artist.html">Nos artistes</a></li>
-                    <li><a href="contact_us.html">Nous contacter</a></li>
-                </ul>
-            </nav>
-        </header>
+    <main>
+        <section class="intro">
+            <h1 class="main_title">Luna ART House</h1>
+            <h2 class="main_title">c'est...</h2>
+            <p class="main_text">La rencontre entre l’élégance et l’audace. Une galerie qui révèle les talents émergents, ceux qui façonnent l’art de demain. Chaque œuvre y trouve un écrin sobre et raffiné, où la lumière met en valeur la singularité de chaque artiste. Ici, l’expérience se veut authentique, immersive, et résolument contemporaine. Luna Art House, c'est une invitation à découvrir, à ressentir, à collectionner l’émotion.</p>
+            <input type="checkbox" id="toggle-more" class="toggle-more" hidden>
+            <a href="" class="btn-toggle">En savoir plus</a> <!--Ajouter le lien ici-->
+            <aside>
+                <img src="" alt="Œuvre représentative de la galerie" class="hidden"> <!--Ajouter image ici-->
+            </aside>
+        </section>
 
-        <main>
-            <div class="main_div">
-                <section>
+        <section class="nos-oeuvres">
+            <h2 class="second_title">Nos œuvres</h2>
+            <div class="grid-template-images">
+                <figure>
+                    <img src="" alt="Image d'une œuvre"> <!--Ajouter image ici--> <!--202x202-->
+                    <figcaption>
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum lorem ipsum lorem ipsum</p>
+                    </figcaption>
+                </figure>
 
-                     <h1 class="title_template first_title_color">Luna ART House, <br></h1><h2 class="title_template first_title_color">c'est...</h2>
-                     <p class="section_p">Ut wisi enim ad minim veniam, quis nostrud exerci
-tation ullamcorper suscipit lobortis nisl ut aliquip
-ex ea commodo consequat. Duis autem vel eum
-iriure dolor in hendrerit in vulputate velit esse
-molestie consequat, vel illum dolore eu feugiat
-nulla facilisis at vero eros et accumsan et iusto odio
-dignissim qui blandit praesent luptatum zzril
-delenit augue duis dolore te feugait nulla facilisi.</p>
-                     <p>En savoir plus</p>
-                </section>
+                <figure>
+                    <img src="" alt="Image d'une œuvre"> <!--Ajouter image ici-->
+                    <figcaption>
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum lorem ipsum lorem ipsum</p>
+                    </figcaption>
+                </figure>
 
-                <aside>
-                    <img src="Images/wolf.jpg" alt="image_galerie">
-                </aside>
+                <figure>
+                    <img src="" alt="Image d'une œuvre"> <!--Ajouter image ici-->
+                    <figcaption>
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum lorem ipsum lorem ipsum</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="extra_oeuvre">
+                    <img src="" alt="Image d'une œuvre"> <!--Ajouter image ici-->
+                    <figcaption>
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum lorem ipsum lorem ipsum</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="extra_oeuvre">
+                    <img src="" alt="Image d'une œuvre"> <!--Ajouter image ici-->
+                    <figcaption>
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum lorem ipsum lorem ipsum</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="extra_oeuvre">
+                    <img src="" alt="Image d'une œuvre"> <!--Ajouter image ici-->
+                    <figcaption>
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum lorem ipsum lorem ipsum</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="extra_oeuvre">
+                    <img src="" alt="Image d'une œuvre"> <!--Ajouter image ici-->
+                    <figcaption>
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum lorem ipsum lorem ipsum</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="extra_oeuvre">
+                    <img src="" alt="Image d'une œuvre"> <!--Ajouter image ici-->
+                    <figcaption>
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum lorem ipsum lorem ipsum</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="extra_oeuvre">
+                    <img src="" alt="Image d'une œuvre"> <!--Ajouter image ici-->
+                    <figcaption>
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum lorem ipsum lorem ipsum</p>
+                    </figcaption>
+                </figure>
 
             </div>
-            
-            <section>
-                <h2 class="title_template second_title_color">Nos oeuvres</h2>
 
-                <div class="grid-template-images">
-                    <figure>
-                        <img src="" alt="images">
-                        <figcaption>
-                            <h3>Lorem ipsum</h3>
-                            <p>Lorem ipsum lorem ipsum lorem ipsum</p>
-                        </figcaption>
-                    </figure>
+            <input type="checkbox" id="toggle-more" class="toggle-more" hidden>
+            <label for="toggle-more" class="btn-toggle">Voir toutes nos oeuvres</label>
+        </section>
 
-                    <figure>
-                        <img src="" alt="images">
-                        <figcaption>
-                            <h3>Lorem ipsum</h3>
-                            <p>Lorem ipsum lorem ipsum lorem ipsum</p>
-                        </figcaption>
-                    </figure> 
-                    
-                    <figure>
-                        <img src="" alt="images">
-                        <figcaption>
-                            <h3>Lorem ipsum</h3>
-                            <p>Lorem ipsum lorem ipsum lorem ipsum</p>
-                        </figcaption>
-                    </figure>
-                    
-                    <figure>
-                        <img src="" alt="images">
-                        <figcaption>
-                            <h3>Lorem ipsum</h3>
-                            <p>Lorem ipsum lorem ipsum lorem ipsum</p>
-                        </figcaption>
-                    </figure>
-                    
-                    <figure>
-                        <img src="" alt="images">
-                        <figcaption>
-                            <h3>Lorem ipsum</h3>
-                            <p>Lorem ipsum lorem ipsum lorem ipsum</p>
-                        </figcaption>
-                    </figure> 
-                    
-                    <figure>
-                        <img src="" alt="images">
-                        <figcaption>
-                            <h3>Lorem ipsum</h3>
-                            <p>Lorem ipsum lorem ipsum lorem ipsum</p>
-                        </figcaption>
-                    </figure>
+        <section class="nos-artistes">
+            <h2 class="second_title">Nos artistes</h2>
+            <div class="texte">
+                <p class="main_text">Les artistes de Luna Art House incarnent la fraîcheur et la vitalité de la scène contemporaine…</p>
+                <p class="main_text">Nous collaborons avec ces talents émergents pour les accompagner dans chaque étape de leur parcours…</p>
+            </div>
 
-                    <figure>
-                        <img src="" alt="images">
-                        <figcaption>
-                            <h3>Lorem ipsum</h3>
-                            <p>Lorem ipsum lorem ipsum lorem ipsum</p>
-                        </figcaption>
-                    </figure>
-                    
-                    <figure>
-                        <img src="" alt="images">
-                        <figcaption>
-                            <h3>Lorem ipsum</h3>
-                            <p>Lorem ipsum lorem ipsum lorem ipsum</p>
-                        </figcaption>
-                    </figure> 
-                    
-                    <figure>
-                        <img src="" alt="images">
-                        <figcaption>
-                            <h3>Lorem ipsum</h3>
-                            <p>Lorem ipsum lorem ipsum lorem ipsum</p>
-                        </figcaption>
-                    </figure>
+            <article class="artiste">
+                <img src="" alt="Photo de Shelly Mitchell" class="desktop_only"> <!--Ajouter image ici-->
+                <h3>Shelly Mitchell</h3>
+                <p class="main_text">Shelly Mitchell est une artiste digitale dont l’univers mêle élégance et onirisme…</p>
+            </article>
 
-                    <figure>
-                        <img src="" alt="images">
-                        <figcaption>
-                            <h3>Lorem ipsum</h3>
-                            <p>Lorem ipsum lorem ipsum lorem ipsum</p>
-                        </figcaption>
-                    </figure>
-                    
-                    <figure>
-                        <img src="" alt="images">
-                        <figcaption>
-                            <h3>Lorem ipsum</h3>
-                            <p>Lorem ipsum lorem ipsum lorem ipsum</p>
-                        </figcaption>
-                    </figure> 
-                    
-                    <figure>
-                        <img src="" alt="images">
-                        <figcaption>
-                            <h3>Lorem ipsum</h3>
-                            <p>Lorem ipsum lorem ipsum lorem ipsum</p>
-                        </figcaption>
-                    </figure>
-                </div>
-            </section>
-        </main>
+            <article class="artiste">
+                <img src="" alt="Photo de Margaret H. Nicholson" class="desktop_only"> <!--Ajouter image ici-->
+                <h3>Margaret H. Nicholson</h3>
+                <p class="main_text">Margaret H. Nicholson est une peintre contemporaine dont l’œuvre se distingue par sa profondeur émotionnelle…</p>
+            </article>
 
-        <footer>
-            <section class="section_footer">
-                <h3 class="h3_footer">Newsletter</h3>
-                <form class="form_footer">
-                    <input type="email" placeholder="Entrez votre email">
-                    <button type="submit">Recevoir notre Newsletter</button>
-                </form>
-            </section>
+            <article class="artiste extra_artiste">
+                <img src="" alt="Photo de Caroline Marleau" class="desktop_only"> <!--Ajouter image ici-->
+                <h3>Caroline Marleau</h3>
+                <p class="main_text">Caroline Marleau est une photographe globe-trotteuse fascinée par la diversité et la richesse des cultures…</p>
+            </article>
 
-            <section class="section_footer">
-                <h3 class="h3_footer">Adresse</h3>
-                <p class="p_footer">xxxxxxxxx</p>
-            </section>
+            <article class="artiste extra_artiste">
+                <img src="" alt="Photo de Léon Pitre" class="desktop_only"> <!--Ajouter image ici-->
+                <h3>Léon Pitre</h3>
+                <p class="main_text">Léon Pitre est un sculpteur contemporain dont le travail explore la tension entre force et fragilité…</p>
+            </article>
 
-            <section class="section_footer">
-                <h3 class="h3_footer">Horraires</h3>
-                <p class="p_footer">xxxxxxx</p>
-            </section>
-        </footer>
+            <input type="checkbox" id="toggle-more" class="toggle-more" hidden>
+            <label for="toggle-more" class="btn-toggle">Voir tous nos artistes</label>
 
-    </body>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <section class="section_footer">
+            <h3 class="h3_footer">Newsletter</h3>
+            <form class="form_footer">
+                <input type="email" placeholder="Entrez votre email">
+                <button type="submit">Recevoir notre Newsletter</button>
+            </form>
+        </section>
+
+        <section class="section_footer">
+            <h3 class="h3_footer">Adresse</h3>
+            <p class="p_footer">10 RUE DE LA REPUBLIQUE 75000 PARIS  Tel : 01.63.45.85.56</p>
+        </section>
+
+        <section class="section_footer">
+            <h3 class="h3_footer">Horaires</h3>
+            <p class="p_footer">
+                Lundi : fermé<br>
+                Mardi : 10h - 19h<br>
+                Du mercredi au samedi : 10h - 19h
+            </p>
+        </section>
+    </footer>
+
+</body>
 </html>
