@@ -50,6 +50,10 @@
         display: none;
     }
 
+    .header_img{
+        max-width: 150px;
+    }
+
     /* ===========================
        Hero section
        =========================== */
@@ -70,8 +74,21 @@
        
        .intro img{
         display: block;
-        height: auto;
+        max-height: 500px;
        }
+
+       .main_title{
+        font-size: 5em;
+       }
+
+       .main_text{
+        font-size: 1em;
+       }
+
+       .main{
+        margin: 0 4em;
+       }
+
     /* ===========================
            Grid pour les œuvres
        =========================== */
@@ -85,6 +102,16 @@
         display: block !important;
         opacity: 1 !important;
         transform: translateY(0) !important;
+    }
+
+    .grid-template-images img{
+        max-width: 250px;
+        border: 2px solid rgb(0, 0, 0);
+    }
+
+    figcaption{
+        border: 2px solid white;
+        width: 250px;
     }
 
     .btn-toggle {
@@ -129,6 +156,10 @@
         gap: 10px;
     }
 
+    .artiste{
+        min-width: 100% ;
+    }
+
     /* Hover sur articles artistes */
     .artiste:hover {
         background-color: antiquewhite;
@@ -136,6 +167,11 @@
 
     .artiste .desktop_only:hover{
         transform: scale(1.1);
+    }
+
+    .texte{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     /* ===========================
