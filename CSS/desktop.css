@@ -1,0 +1,174 @@
+/* ===========================
+   Desktop Styles (min-width: 1024px)
+   =========================== */
+@media (min-width: 1024px) {
+
+    /* BODY */
+    body {
+        background-color: var(--color-background);
+        margin: 0 auto;
+    }
+
+    main {
+        margin-bottom: 50px;
+    }
+
+    /* ===========================
+             Navbar Desktop
+       =========================== */
+    nav ul {
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+        background: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    nav ul li a {
+        display: block;
+        color: #000;
+        padding: 10px 15px;
+        text-decoration: none;
+    }
+
+    .nav-toggle,
+    .nav-toggle-label {
+        display: none;
+    }
+
+    /* ===========================
+       Hero section
+       =========================== */
+       .intro{
+        border: 2px solid black;
+        display: flex;
+
+       }
+
+       .colonne_gauche{
+        flex-direction: column;
+        width: 50%;
+       }
+
+
+       .colonne_droite{
+        width: 50%;
+       }
+       
+       .intro img{
+        display: block;
+        height: auto;
+       }
+    /* ===========================
+           Grid pour les œuvres
+       =========================== */
+    .grid-template-images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-template-images figure,
+    .grid-template-images .extra_oeuvre {
+        display: block !important;
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+
+    .btn-toggle {
+        display: none;
+    }
+
+    /* ===========================
+          Affichage Desktop Only
+       =========================== */
+    .desktop_only {
+        display: block;
+    }
+
+    /* ===========================
+           Articles Artistes
+       =========================== */
+    .artiste,
+    .extra_artiste {
+        display: flex;
+        gap: 20px;
+        background-color: #F5F5F5;
+        margin: 0 auto 5% auto; 
+        max-width: 50%;
+        transition: transform 0.3s ease; 
+        overflow: visible; 
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+
+    .artiste img {
+        max-height: 145px;
+        max-width: 187px;
+        margin: 3%;
+        flex-shrink: 0;
+    }
+
+    .artiste_texte {
+        flex: 2;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Hover sur articles artistes */
+    .artiste:hover {
+        background-color: antiquewhite;
+    }
+
+    .artiste .desktop_only:hover{
+        transform: scale(1.1);
+    }
+
+    /* ===========================
+       Liens articles
+       =========================== */
+    .artist_link {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    /* ===========================
+       Boutons voir plus / voir moins
+       =========================== */
+    .extra_artiste,
+    .grid-template-images .extra_oeuvre {
+        transition: all 0.4s ease;
+    }
+
+
+        /* ===========================
+               Footer
+       =========================== */
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 2em 5%;
+        text-align: center;
+    }
+
+    .section_footer {
+        padding: 0;
+    }
+
+}

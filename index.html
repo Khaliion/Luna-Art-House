@@ -6,6 +6,7 @@
     
     <!-- Stylesheet CSS -->
     <link rel="stylesheet" href="CSS/base_style.css">
+    <link rel="stylesheet" href="CSS/desktop.css">
 
     <script src="script_JS.js"></script>
     
@@ -37,18 +38,20 @@
 
     <main>
         <section class="intro">
-            <h1 class="main_title">Luna ART House</h1>
-            <h2 class="main_title">c'est...</h2>
-            <p class="main_text">La rencontre entre l’élégance et l’audace. Une galerie qui révèle les talents émergents, ceux qui façonnent l’art de demain. Chaque œuvre y trouve un écrin sobre et raffiné, où la lumière met en valeur la singularité de chaque artiste. Ici, l’expérience se veut authentique, immersive, et résolument contemporaine. Luna Art House, c'est une invitation à découvrir, à ressentir, à collectionner l’émotion.</p>
-            <a href="">En savoir plus</a>
+            <div class="colonne_gauche">
+                <h1 class="main_title ">Luna Art House</h1>
+                <h2 class="main_title">C'est...</h2>
+                <p class="main_text">La rencontre entre l’élégance et l’audace. Une galerie qui révèle les talents émergents, ceux qui façonnent l’art de demain. Chaque œuvre y trouve un écrin sobre et raffiné, où la lumière met en valeur la singularité de chaque artiste. Ici, l’expérience se veut authentique, immersive, et résolument contemporaine. Luna Art House, c'est une invitation à découvrir, à ressentir, à collectionner l’émotion.</p>
+                <a href="#">En savoir plus</a>
+            </div>
             
-            <aside>
-                <img src="Images/artiste 1/artiste1_hero_section.webp" alt="Œuvre représentative de la galerie" class="hidden"> <!--Ajouter image ici-->
+            <aside class="colonne_droite">
+                <img src="Images/artiste 1/artiste1_hero_section.webp" alt="Œuvre représentative de la galerie" class="desktop_only hero_img"> <!--Ajouter image ici-->
             </aside>
         </section>
 
         <section class="nos-oeuvres">
-            <h2 class="second_title" id="link_Nos_oeuvres">Nos œuvres</h2>
+            <h2 class="main_title" id="link_Nos_oeuvres">Nos œuvres</h2>
 
             <input type="checkbox" id="toggle-more" class="toggle-more" hidden>
             
@@ -118,6 +121,14 @@
                 </figure>
 
                 <figure class="extra_oeuvre">
+                    <img src="Images/artiste3/artiste3_nos_oeuvres_1.webp" alt="Image d'une œuvre"> <!--Ajouter image ici-->
+                    <figcaption>
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum lorem ipsum lorem ipsum</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="extra_oeuvre">
                     <img src="Images/artiste4/artiste4_nos_oeuvres_1.webp" alt="Image d'une œuvre"> <!--Ajouter image ici-->
                     <figcaption>
                         <h3>Lorem ipsum</h3>
@@ -150,38 +161,47 @@
         <section class="nos-artistes">
             <input type="checkbox" id="toggle-artistes" class="toggle-artistes" hidden>
 
-            <h2 class="second_title" id="link_Nos_Artistes">Nos artistes</h2>
+            <h2 class="main_title" id="link_Nos_Artistes">Nos artistes</h2>
             <div class="texte">
-                <p class="main_text">Les artistes de Luna Art House incarnent la fraîcheur et la vitalité de la scène contemporaine…</p>
-                <p class="main_text">Nous collaborons avec ces talents émergents pour les accompagner dans chaque étape de leur parcours…</p>
+                <p class="main_text center">Les artistes de Luna Art House incarnent la fraîcheur et la vitalité de la scène contemporaine…</p>
+                <p class="main_text center">Nous collaborons avec ces talents émergents pour les accompagner dans chaque étape de leur parcours…</p>
             </div>
 
             <article class="artiste">
-                <img src="" alt="Photo de Shelly Mitchell" class="desktop_only"> <!--Ajouter image ici-->
-                <h3>Shelly Mitchell</h3>
-                <p class="main_text">Shelly Mitchell est une artiste digitale dont l’univers mêle élégance et onirisme…</p>
-                <img src="" alt="Photo d'une oeuvre de Shellly'" class="desktop_only"> <!--Ajouter image ici-->
+                <img src="Images/artiste 1/portrait.webp" alt="Photo de Shelly Mitchell" class="desktop_only"> <!--Ajouter image ici-->
+                <div class="artiste_texte">
+                    <h3 class="second_title">Shelly Mitchell</h3>
+                    <p class="main_text center">Shelly Mitchell est une artiste digitale dont l’univers mêle élégance et onirisme. À travers ses créations, elle explore la frontière entre le réel et l’imaginaire, jouant avec la lumière, les textures et la poésie des formes numériques. Son travail, à la fois délicat et percutant, traduit une sensibilité contemporaine où chaque composition devient une émotion visuelle, une immersion dans un monde à la fois intime et infini.</p>
+                </div>
+                <img src="Images/artiste 1/artiste1.webp" alt="Photo d'une oeuvre de Shellly'" class="desktop_only"> <!--Ajouter image ici-->
             </article>
+
 
             <article class="artiste">
-                <img src="" alt="Photo de Margaret H. Nicholson" class="desktop_only"> <!--Ajouter image ici-->
-                <h3>Margaret H. Nicholson</h3>
-                <p class="main_text">Margaret H. Nicholson est une peintre contemporaine dont l’œuvre se distingue par sa profondeur émotionnelle…</p>
-                <img src="" alt="Photo d'une oeuvre de Margaret'" class="desktop_only"> <!--Ajouter image ici-->
+                <img src="Images/artiste2/portrait2_écrété.webp" alt="Photo de Margaret H. Nicholson" class="desktop_only"> <!--Ajouter image ici-->
+                <div class="artiste_texte">
+                    <h3 class="second_title">Margaret H. Nicholson</h3>
+                    <p class="main_text center">Margaret H. Nicholson est une peintre contemporaine dont l’œuvre se distingue par sa profondeur émotionnelle et sa maîtrise des nuances. Ses toiles capturent des fragments de vie, des instants suspendus entre réalisme et abstraction, où la couleur devient langage et la matière, mémoire. À travers ses compositions sobres et puissantes, Margaret explore la fragilité de l’humain et la beauté du silence, offrant à chaque regard une expérience introspective et sensible.</p>
+                </div>
+                <img src="Images/artiste2/artiste3.webp" alt="Photo d'une oeuvre de Margaret'" class="desktop_only"> <!--Ajouter image ici-->
             </article>
 
             <article class="artiste extra_artiste">
-                <img src="" alt="Photo de Caroline Marleau" class="desktop_only"> <!--Ajouter image ici-->
-                <h3>Caroline Marleau</h3>
-                <p class="main_text">Caroline Marleau est une photographe globe-trotteuse fascinée par la diversité et la richesse des cultures…</p>
-                <img src="" alt="Photo d'une oeuvre de Caroline'" class="desktop_only"> <!--Ajouter image ici-->
+                <img src="Images/artiste3/portrait3_écrété.webp" alt="Photo de Caroline Marleau" class="desktop_only"> <!--Ajouter image ici-->
+                <div class="artiste_texte">
+                    <h3 class="second_title">Caroline Marleau</h3>
+                    <p class="main_text center">Caroline Marleau est une photographe globe-trotteuse fascinée par la diversité et la richesse des cultures du monde. Son objectif capture l’authenticité des visages, des traditions et des instants qui racontent l’âme des peuples qu’elle rencontre. Entre regard documentaire et approche poétique, son travail révèle la beauté de l’ailleurs, la force des différences et la délicatesse de l’humanité partagée. Chaque cliché devient une fenêtre ouverte sur le monde, vibrant de couleur, de vie et d’émotion.</p>
+                </div>
+                <img src="Images/artiste3/artiste2.webp" alt="Photo d'une oeuvre de Caroline'" class="desktop_only"> <!--Ajouter image ici-->
             </article>
 
             <article class="artiste extra_artiste">
-                <img src="" alt="Photo de Léon Pitre" class="desktop_only"> <!--Ajouter image ici-->
-                <h3>Léon Pitre</h3>
-                <p class="main_text">Léon Pitre est un sculpteur contemporain dont le travail explore la tension entre force et fragilité…</p>
-                <img src="" alt="Photo d'une oeuvre de Léon Pitre" class="desktop_only"> <!--Ajouter image ici-->
+                <img src="Images/artiste4/portrait4_écrété.webp" alt="Photo de Léon Pitre" class="desktop_only"> <!--Ajouter image ici-->
+                <div class="artiste_texte">
+                    <h3 class="second_title">Léon Pitre</h3>
+                    <p class="main_text center">Léon Pitre est un sculpteur contemporain dont le travail explore la tension entre force et fragilité. À travers le métal, la pierre ou le bois, il façonne des formes organiques et épurées qui semblent animées d’un souffle intérieur. Ses œuvres, à la croisée du brut et du raffiné, questionnent la relation entre l’homme et la matière, entre mouvement et immobilité. Léon Pitre sculpte non seulement la matière, mais aussi le silence, donnant vie à des pièces puissantes, sensibles et profondément humaines.</p>
+                </div>
+                <img src="Images/artiste4/artiste4.webp" alt="Photo d'une oeuvre de Léon Pitre" class="desktop_only"> <!--Ajouter image ici-->
             </article>
 
             <label for="toggle-artistes" class="btn-toggle"></label>
@@ -195,14 +215,14 @@
         <section class="section_footer">
             <h3 class="h3_footer">Newsletter</h3>
             <form class="form_footer">
-                <input type="email" placeholder="Entrez votre email">
+                <input type="email" placeholder="Entrez votre email" required>
                 <button type="submit">Recevoir notre Newsletter</button>
             </form>
         </section>
 
         <section class="section_footer">
             <h3 class="h3_footer">Adresse</h3>
-            <p class="p_footer">10 RUE DE LA REPUBLIQUE 75000 PARIS  Tel : 01.63.45.85.56</p>
+            <p class="p_footer">10 RUE DE LA REPUBLIQUE <br>75000 PARIS<br>  Tel : 01.63.45.85.56</p>
         </section>
 
         <section class="section_footer">
