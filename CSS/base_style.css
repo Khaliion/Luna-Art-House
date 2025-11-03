@@ -16,6 +16,7 @@
 
 body {
     background-color: var(--color-background);
+    margin: 0 auto;
 }
 
     /* ===========================
@@ -256,14 +257,14 @@ figure:hover figcaption {
        Boutons // éléments à masquer
        =========================== */
 
-.grid-template-images figure:nth-child(n+4) {
+.grid-template-images figure:nth-child(n+5) {
     display: none;
     opacity: 0;
     transform: translateY(-8px);
     transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
-.toggle-more:checked ~ .grid-template-images figure:nth-child(n+4) {
+.toggle-more:checked ~ .grid-template-images figure:nth-child(n+5) {
     display: block;
     opacity: 1;
     transform: translateY(0);
