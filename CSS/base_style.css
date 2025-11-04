@@ -6,7 +6,7 @@
        Base 
        =========================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&family=Oswald:wght@400;700&display=swap');
 
 :root {
     --color-title: #707070;
@@ -22,6 +22,12 @@ body {
     /* ===========================
        Header section + navbar
        =========================== */
+
+.hero-slider .slide {
+    animation: none;
+    opacity: 1;
+}
+
 .header {
     background-color: white;
     min-height: 10vh;
