@@ -13,18 +13,17 @@
     }
 
     nav ul {
-        position: static;
-        width: auto;
-        height: auto;
-        flex-direction: row;
+        position: static; 
+        width: auto; 
+        height: auto; 
+        flex-direction: row; 
         align-items: center;
-        justify-content: flex-end;
-        transform: none;
-        opacity: 1;
-        visibility: visible;
-        background: none;
-        margin: 0;
-        padding: 0;
+        transform: none; 
+        opacity: 1; 
+        visibility: visible; 
+        background: none; 
+        margin: 0; 
+        padding: 0; 
     }
 
     nav ul li {
@@ -47,8 +46,15 @@
         display: none;
     }
 
+    .header{
+        display: flex;
+        align-items: flex-end;
+        padding: 10px 3%;
+    }
+
     .header_img {
         max-width: 120px;
+        margin-left: 25px;
     }
 
   
@@ -306,5 +312,168 @@
 
     .desktop_only {
         display: block !important;
+    }
+
+    .artiste,
+    .extra_artiste {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 25px;
+        background-color: #F5F5F5;
+        margin: 0 auto 4% auto;
+        padding: 25px;
+        max-width: 90%;
+        transition: all 0.3s ease;
+        opacity: 1 !important;
+        transform: translateY(0) !important;     
+        border-radius: 50px;
+        border: 1px solid black;
+    }
+
+    .artiste img {
+        max-height: 180px;
+        max-width: 220px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        flex-shrink: 0;
+        transition: transform 0.3s ease;
+    }
+
+    .artiste_texte {
+        flex: 1;
+        padding: 0 15px;
+    }
+
+    .artiste:hover {
+        background-color: #e8e8e8;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .artiste img:hover {
+        transform: scale(1.08);
+    }
+
+    .texte {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        padding: 0 5%;
+        max-width: 1400px;
+        margin: 0 auto 40px auto;
+    }
+
+    /* Footer Desktop */
+    footer {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        padding: 3em 5%;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .section_footer:last-child {
+        grid-column: auto;
+    }
+}
+
+/* ===========================
+   Large Desktop - 1440px
+   =========================== */
+
+@media (min-width: 1440px) {
+
+    .header_img {
+        max-width: 170px;
+    }
+
+    nav ul li {
+        margin: 0 25px;
+    }
+
+    /* Hero Section Large */
+
+    .intro {
+        padding: 0 8%;
+        gap: 60px;
+        margin-bottom: 80px;
+    }
+
+    .main_title {
+        font-size: 5.5em;
+    }
+
+    .main_text {
+        font-size: 1.15em;
+        line-height: 1.8;
+    }
+
+    /* Grid Large Desktop */
+    .grid-template-images {
+        gap: 35px;
+        padding: 0 8%;
+    }
+
+    .grid-template-images img {
+        height: 380px;
+    }
+
+    figcaption {
+        padding: 22px;
+    }
+
+    figcaption h3 {
+        font-size: 1.4em;
+    }
+
+    figcaption p {
+        font-size: 1em;
+    }
+
+    /* Articles Artistes Large */
+    .artiste,
+    .extra_artiste {
+        max-width: 1200px;
+        padding: 35px;
+        gap: 35px;
+        margin-bottom: 3%;
+    }
+
+    .artiste img {
+        max-height: 220px;
+        max-width: 280px;
+    }
+
+    .artiste_texte {
+        padding: 0 25px;
+    }
+
+    .artiste_texte h3 {
+        font-size: 1.8em;
+    }
+
+    .artiste_texte p {
+        font-size: 1.1em;
+    }
+
+    .texte {
+        padding: 0 8%;
+        gap: 50px;
+        margin-bottom: 60px;
+    }
+
+    /* Footer Large */
+    footer {
+        padding: 4em 8%;
+        gap: 60px;
+    }
+
+    .h3_footer {
+        font-size: 1.5em;
+    }
+
+    .p_footer {
+        font-size: 1.1em;
     }
 }
