@@ -89,6 +89,7 @@
     }
 
      .hero-slider {
+        display: block;
         position: relative;
         height: 480px;
         overflow: hidden;
