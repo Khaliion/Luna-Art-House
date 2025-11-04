@@ -28,6 +28,10 @@ body {
     opacity: 1;
 }
 
+.hero-slider{
+    display: none;
+}
+
 .header {
     background-color: white;
     min-height: 10vh;
