@@ -376,3 +376,15 @@ figure:hover figcaption {
 .form_footer button:hover {
     opacity: 0.6;
 }
+
+
+.map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+iframe{
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+}
