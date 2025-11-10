@@ -35,6 +35,15 @@ body {
 .header {
     background-color: white;
     min-height: 10vh;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+main{
+    padding-top: 15%;
 }
 
 .header_img {
