@@ -232,7 +232,6 @@
 
     .main_title {
         font-size: 4.5em;
-        margin-bottom: 20px;
     }
 
     .main_text {
@@ -324,8 +323,6 @@
         background-color: #F5F5F5;
         margin: 0 auto 4% auto;
         padding: 25px;
-        max-width: 90%;
-        transition: all 0.3s ease;
         opacity: 1 !important;
         transform: translateY(0) !important;     
         border-radius: 50px;
