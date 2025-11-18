@@ -44,6 +44,7 @@ body {
 
 main{
     padding-top: 3em;
+    padding-bottom: 2em;
 }
 
 .header_img {
@@ -327,13 +328,16 @@ figure:hover figcaption {
     content: "Voir tous nos artistes";
 }
 
+.separateur{
+    height: 50px;
+    background-color: white;
+}
     /* ===========================
        Footer
        =========================== */
 
 .section_footer {
     text-align: center;
-    padding: 2em;
 }
 
 .h3_footer {
