@@ -88,6 +88,10 @@
         line-height: 1.6;
     }
 
+    .padding{
+    margin-left: 6%;
+    }
+
      .hero-slider {
         display: block;
         position: relative;

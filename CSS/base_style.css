@@ -179,6 +179,9 @@ nav ul li:nth-child(4) { transition-delay: 0.4s; }
     display: none;
 }
 
+.padding{
+    margin-left: 4%;
+}
     /* ===========================
        Figcaption - partie oeuvres 
        =========================== */
@@ -362,6 +365,20 @@ figure:hover figcaption {
 }
 
 .form_footer input[type="email"]::placeholder {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.form_footer input[type="name"] {
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    font-size: 0.9rem;
+    outline: none;
+    margin-bottom: 3%;
+}
+
+.form_footer input[type="name"]::placeholder {
     color: #666;
     font-size: 0.9rem;
 }
