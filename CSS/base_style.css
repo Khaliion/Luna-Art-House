@@ -166,7 +166,7 @@ nav ul li:nth-child(4) { transition-delay: 0.4s; }
     display: none;
 }
 
-.intro, section {
+.intro, div.hero-slider {
     margin: 1em;
     scroll-margin-top: 70px;
 }
@@ -355,7 +355,7 @@ figure:hover figcaption {
     flex-direction: column;
 }
 
-.form_footer input[type="email"] {
+.form_footer input {
     border: none;
     border-bottom: 1px solid #000;
     background: transparent;
@@ -364,21 +364,7 @@ figure:hover figcaption {
     margin-bottom: 3%;
 }
 
-.form_footer input[type="email"]::placeholder {
-    color: #666;
-    font-size: 0.9rem;
-}
-
-.form_footer input[type="name"] {
-    border: none;
-    border-bottom: 1px solid #000;
-    background: transparent;
-    font-size: 0.9rem;
-    outline: none;
-    margin-bottom: 3%;
-}
-
-.form_footer input[type="name"]::placeholder {
+.form_footer input::placeholder {
     color: #666;
     font-size: 0.9rem;
 }
@@ -407,12 +393,24 @@ figure:hover figcaption {
     opacity: 0.6;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
 
 .map{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 iframe{
     max-width: 300px;
     display: flex;
